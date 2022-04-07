@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        
+        #red-text {
+            color: red;
+        }
+        
+        .small-text {
+            font-size: small
+        }
+        /*this is how you add a comment in css*/
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+    <!--#: can only use once. .(class) can use anywhere-->
+
+</head>
+
+<body>
+    <div class="div-1">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <h1>HTML first</h1>
+        <ul>
+            <li>apples</li>
+            <li>oranges</li>
+        </ul>
+        <!--ordered list-->
+        <h2>Top movies</h2>
+        <ol>
+            <li>castle in the sky</li>
+            <li>the half of it</li>
+        </ol>
+
+        <table>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+
+        </table>
+
+        <h2>internal CSS</h2>
+        <p style="color:blue">this text is blue</p>
+        <p style="color:red">this text is red</p>
+        <p style="font-size:large">this text is big</p>
+        <p style="font-size:small">this text is small</p>
+        <p style="color:orange; font-size:large; text-align:center">orange, 24px, centered</p>
+
+        <h2>selectors</h2>
+        <p>make this blue</p>
+        <p id="red-text">make this red</p>
+        <p>make this big</p>
+        <p class="small-text">make this small</p>
+
+
+    </div>
+</body>
+
+</html>

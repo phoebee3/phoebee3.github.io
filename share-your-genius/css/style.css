@@ -1,6 +1,100 @@
 body {
-    background-image: url(images/seattle.jpg);
+    background-image: url(../images/seattle.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.container {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px auto;
+    padding: 30px;
+    height: 900px;
+}
+
+.nav {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    list-style-type: none;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    padding: 16px 32px;
+}
+
+.nav li a:hover {
+    background-color: gray;
+    color: aquamarine;
+}
+
+.archive-format li {
+    float: left;
+    display: block;
+}
+
+
+/*gallery style*/
+
+.row {
+    margin: 8px -16px;
+}
+
+
+/*add padding between column*/
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+
+/*four columns with float*/
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+/*clear floats after rows*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*content */
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.content tr td img {
+    width: 25%;
+}
+
+
+/*Archive CSS*/
+
+.archive-format li {
+    display: inline-block;
+    width: 23%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }

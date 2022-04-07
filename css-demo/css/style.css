@@ -1,0 +1,35 @@
+.div-1 {
+    border: 5px solid lightskyblue;
+    margin: 20px;
+    padding: 20px;
+    width: 1000px;
+    background-color: white;
+    margin: auto
+}
+
+.nav {
+    background-color: cornflowerblue;
+}
+
+ul .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: 0;
+}
+
+ul.nav li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: lightcyan;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: aquamarine;
+}
