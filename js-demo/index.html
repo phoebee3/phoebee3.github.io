@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body>
+
+    <h1>learning javascript:</h1>
+    <h2>how do we do onclick events and alerts?</h2>
+    <a href="https://www.eastsideprep.org" target="_blank" onclick="alert('do you want to leave this page?')">go to the EPS website</a>
+    <!--challenge 1: custom link--><br>
+    <a href="https://www.kexp.org/playlist/" target="_blank" onclick="alert('do you want to leave this page?')">or listen to music instead</a>
+
+    <h2>change html content</h2>
+    <h2>secret identity:</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='a spy...watch out';document.getElementById('secret').style.display='block'">reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">hide!</button>
+
+    <!--challenge 2: two truths and a lie-->
+    <h2>two truths and a lie</h2>
+    <ol>
+        <li>i have lived in seattle all my life</li>
+        <li>my favorite sport was rugby</li>
+        <li>i have no pets</li>
+    </ol>
+    <p id="lie"></p>
+    <button onclick="document.getElementById('lie').innerHTML='lie: i have lived in seattle all my life';document.getElementById('lie').style.display='block'">show answer</button>
+    <button onclick="document.getElementById('lie').style.display='none'">hide answer</button>
+
+    <h2>changing images with javascript</h2>
+    <img src="images/pic_bulboff.gif" alt="lightbulb off" id="light"><br>
+    <button onclick="document.getElementById('light').src='images/pic_bulbon.gif'">turn on light</button>
+    <!--challenge 3: off switch-->
+    <button onclick="document.getElementById('light').src='images/pic_bulboff.gif'">turn off light</button>
+
+    <h2>change css styles with functions</h2>
+    <p id="alice">hi. i'm alice</p>
+    <button onclick="shrinkAlice()">eat food</button>
+
+    <!--challenge 4: drink me-->
+    <button onclick="growAlice()">drink potion</button>
+
+    <!--challenge 5: add extra elements-->
+    <h2>customize this page!</h2>
+    <button onclick="document.body.style.backgroundColor='aliceblue'">blue background</button>
+    <button onclick="document.body.style.fontFamily='Arial'">change font</button>
+
+
+    <script>
+        function shrinkAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'blue';
+            aliceParagraph.style.fontSize = '10px';
+        }
+
+        function growAlice() {
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'red';
+            aliceParagraph.style.fontSize = '20px';
+        }
+    </script>
+</body>
+
+</html>
