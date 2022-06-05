@@ -1,0 +1,65 @@
+.header {
+    background-image: url('images/lake-union2.jpg');
+    /*new feature - adjust image dimensions to fit div using cover property*/
+    background-size: cover;
+    filter: brightness(70%);
+    padding-bottom: 200px;
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.grid-item {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: #F2E2CE;
+}
+
+.nav {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    grid-column: 1/ span 4;
+    background-color: transparent;
+}
+
+ul.nav li {
+    display: inline-block;
+}
+
+ul.nav li a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    width: 200px;
+    line-height: 3em;
+    margin-right: 30px;
+}
+
+ul.nav a:hover {
+    background-color: rgba(116, 128, 255, 0.221);
+}
+
+.about {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    background-color: aliceblue;
+}
