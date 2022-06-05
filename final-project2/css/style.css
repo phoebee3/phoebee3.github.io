@@ -54,6 +54,16 @@ ul.nav a:hover {
     grid-row: 3/4;
 }
 
+.map {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.location-blurb {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
 .footer {
     position: fixed;
     left: 0;
