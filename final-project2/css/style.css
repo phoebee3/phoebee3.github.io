@@ -1,5 +1,5 @@
 .header {
-    background-image: url('images/coffee.webp');
+    background-image: url('images/lake-union2.jpg');
     /*new feature - adjust image dimensions to fit div using cover property*/
     background-size: cover;
     filter: brightness(70%);
@@ -62,6 +62,15 @@ ul.nav a:hover {
 .location-blurb {
     grid-column: 2/3;
     grid-row: 3/4;
+}
+
+.menu {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.menu-style {
+    width: 50%;
 }
 
 .footer {
