@@ -1,5 +1,5 @@
 .header {
-    background-image: url('images/hi-spot-bg.jpg');
+    background-image: url('images/coffee.webp');
     /*new feature - adjust image dimensions to fit div using cover property*/
     background-size: cover;
     filter: brightness(70%);
