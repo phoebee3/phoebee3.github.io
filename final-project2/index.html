@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 
+    <style>
+        .header {
+            background-image: url('images/coffee-bean.avif');
+            /*new feature - adjust image dimensions to fit div using cover property*/
+            background-size: cover;
+            filter: brightness(70%);
+            padding-bottom: 50px;
+            grid-column: 1/span 3;
+            grid-row: 1/span 2;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -16,7 +28,6 @@
         <div class="grid-item header">
             <ul class="grid-item nav" align="center">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="order.html">Order</a></li>
                 <li><a href="location.html">Location</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
@@ -29,6 +40,23 @@
                 flocks to the outdoor patio for drinks and conversation. The mid-day menu is served from 11:30am and includes fresh salads, sandwiches and soups. This eatery has been a hub of Madrona in the morning hours for some 30 years, and old-timers
                 and newbies alike continue to relish its food and charm.</p>
         </div>
+
+        <div class="grid-item about-img">
+            <img src="images/hi-spot-bg.jpg" alt="The Hi Spot">
+        </div>
+
+        <div class="grid-item hours">
+            <h2>Cafe Hours</h2>
+            <h4>Breakfast:</h4>
+            <p>Daily.................8am - 2:30pm</p>
+            <h4>Lunch:</h4>
+            <p>Monday - Friday.................8am - 2:30pm</p>
+            <h4>Espresso & Baked Goods:</h4>
+            <p>Monday - Friday.................8am - 3pm</p>
+            <p>Saturday & Sunday.................8am - 3pm</p>
+
+        </div>
+
         <div class="footer">
             <footer> 1410 34th Ave Seattle, WA 98122 -- 206 325 7905 -- hispotcafe@aol.com</footer>
         </div>

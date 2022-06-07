@@ -7,6 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Blog</title>
+
+    <style>
+        .header {
+            background-image: url('images/coffee-bean.avif');
+            /*new feature - adjust image dimensions to fit div using cover property*/
+            background-size: cover;
+            filter: brightness(70%);
+            padding-bottom: 50px;
+            grid-column: 1/span 3;
+            grid-row: 1/span 2;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 20px;
+            background: #f1f1f1;
+        }
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -16,7 +68,6 @@
         <div class="grid-item header">
             <ul class="grid-item nav" align="center">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="order.html">Order</a></li>
                 <li><a href="location.html">Location</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
@@ -24,7 +75,38 @@
             <p style="text-align:center; padding-bottom:20px; color:white;"><a href="breakfast.html">Breakfast Menu</a> | <a href="midday.html">Midday Menu</a></p>
         </div>
 
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Spring Flowers</h2>
+                    <h5>April 14, 2022</h5>
+                    <div style="height:200px; background-image: url('images/blog1.PNG');
+                    background-size: cover;
+                    padding: 20px;"></div>
+                    <p>Spring is in full bloom here at the hi spot and we got a limited edition custom designed menu from our sweet friends, Sophia and Avery. Stop by and see our flowers coming along. :) #hispotcafe #brunch #seattle #spring</p>
+                </div>
+                <div class="card">
+                    <h2>Patio Season Has Arrived!</h2>
+                    <h5>March 18, 2022</h5>
+                    <div style="height:200px; background-image: url('images/blog2.PNG');
+                    background-size: cover;
+                    padding: 20px;"></div>
+                    <p>It's warming up ☀️ and just in time for patio szn, we're introducing our deconstructed “mimosa package.” It comes with one whole bottle of chilled champagne, refillable sidecars of orange or grapefruit juice or both, coupled with 2-4
+                        garnished glasses. For only $36 can you even believe it? Swipe through and let us know what kind of mimosa pourer you are these days. 🤪🍾🍊 #hispotcafe #brunch</p>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>The Hi Spot Blog</h2>
 
+                    <p>Welcome to the Hi Spot blog! Stay up-to-date on all the latest happenings.</p>
+                </div>
+                <div class="card">
+                    <h3>Follow Us</h3>
+                    <p>Catch us on <a href="https://www.instagram.com/hispotcafe/" target="_blank">Instagram</a> and <a href="https://www.facebook.com/HiSpotCafe/" target="_blank">Facebook!</a></p>
+                </div>
+            </div>
+        </div>
 
         <div class="footer">
             <footer> 1410 34th Ave Seattle, WA 98122 -- 206 325 7905 -- hispotcafe@aol.com</footer>

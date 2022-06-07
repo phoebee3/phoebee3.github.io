@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Order</title>
+
+    <style>
+        .header {
+            background-image: url('images/coffee-bean.avif');
+            /*new feature - adjust image dimensions to fit div using cover property*/
+            background-size: cover;
+            filter: brightness(70%);
+            padding-bottom: 50px;
+            grid-column: 1/span 3;
+            grid-row: 1/span 2;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -16,7 +29,6 @@
         <div class="grid-item header">
             <ul class="grid-item nav" align="center">
                 <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="order.html">Order</a></li>
                 <li><a href="location.html">Location</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
